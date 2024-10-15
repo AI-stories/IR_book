@@ -3,8 +3,41 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: 1_inverted_index
+parts:
+  - chapters:
+    - file: "Myst syntax cheat sheet"
+  - caption: Preface
+    chapters:
+    - file: Preface/about_this_book
+    - file: Preface/who_this_book_is_for
+    - file: Preface/how_to_use_this_book
+  - caption: Part I
+    chapters:
+    - file: Part_1/introduction_to_information_retrieval
+    - file: Part_1/text_analysis_and_indexing
+  - caption: Part II
+    chapters:
+    - file: Part_2/basic_retrieval_models
+    - file: Part_2/term_based_retrieval_models
+    - file: Part_2/semantic_retrieval_models
+    - file: Part_2/hybrid_retrieval_techniques
+    - file: Part_2/multimodal_interactions
+  - caption: Part III
+    chapters:
+    - file: Part_3/ir_system_evaluation
+    - file: Part_3/learning_to_rank
+  - caption: Part IV
+    chapters:
+    - file: Part_4/ir_user_interactions
+  - caption: Part V
+    chapters:
+    - file: Part_5/conversational_search
+    - file: Part_5/recommender_systems
+  - caption: Part VI
+    chapters:
+    - file: Part_6/scaling_ir_systems
+  - caption: Back Matter
+    chapters:
+    - file: Back_Matter/glossary
+    - file: Back_Matter/bibliography
+    - file: Back_Matter/index
